@@ -15,8 +15,6 @@ https://www.kaggle.com/competitions/dogs-vs-cats/
 2.   資料預處理(Preprocessing).
       * 調整大小(Resize)
       * 重新縮放(Rescale to (0,1))
-      * 調整色彩
-          >全彩或灰階(Grayscale)
       * 將資料分為訓練集(training)及與驗證集(Validation)
 4.   構建分類器模型(build the classifer model)
       * 使用Tensorflow.Keras
@@ -29,7 +27,6 @@ URL：https ://www.kaggle.com/c/dogs-vs-cats/data
 包含25,000張狗與貓的圖片，標記為1 = 狗，0 = 貓
 ## 預處理(Preprocessing)
 使用ImageDataGenerator對圖片進行旋轉放大平移來增強資料避免過擬合，以及Rescale。
-也用使用OpenCV將圖片轉成灰階，可以減少運算時間，但是結果不佳
 
 # Model
 ## CNN(Convolutional Neural Network)
